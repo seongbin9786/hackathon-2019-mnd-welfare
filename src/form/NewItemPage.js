@@ -143,14 +143,13 @@ const container = styled.div`
 class NewItemPage extends React.Component {
   handleSubmit = values => {
     const dataToSend = {
-      ...values
-      // event로 등록하는 경우는 accepted 필요 없음
-      // accepted: false
+      ...values,
+      accepted: false
     };
     console.log(dataToSend);
 
     const { postForm, history } = this.props;
-    postForm('/events', dataToSend).then(history.goBack);
+    postForm('/addRequests', dataToSend).then(history.goBack);
   };
 
   render() {
