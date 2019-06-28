@@ -73,6 +73,7 @@ const Benefit = styled.span`
 
 const imgStyle = css`
   border-radius: 10px;
+  object-fit: cover;
 `;
 
 const placeholderStyle = css`
@@ -89,12 +90,12 @@ export default ({
   showRank,
   showCategory,
   index,
-  item: { id, rank, category, name, location, benefit, imageUrl }
+  item: { id, rank, category, name, location, benefit, image }
 }) => (
   // id가 없으면 placeholder 이므로 click 못하게
   <Wrapper onClick={id ? onClick : f => f}>
     <LazyImg
-      src={imageUrl}
+      src={image}
       width="120px"
       height="120px"
       imgStyle={imgStyle}
