@@ -36,6 +36,12 @@ const Placeholder = styled.div`
   animation-timing-function: ease-out;
   animation-iteration-count: ${props => (props.hasSource ? 'infinite' : '1')};
 
+  /* 내용 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a9a9a9;
+
   ${props => props.placeholderStyle}
 `;
 
@@ -60,13 +66,15 @@ export default class extends React.Component {
     } = this.props;
     return (
       <React.Fragment>
-        {this.state.loaded ? null : (
+        {src && this.state.loaded ? null : (
           <Placeholder
             hasSource={!!src}
             {...rest}
             placeholderStyle={placeholderStyle}
             onClick={onClick}
-          />
+          >
+            {!src && 'no image'}
+          </Placeholder>
         )}
         {/* src가 없는 경우 예외 처리 */}
         {src && (
