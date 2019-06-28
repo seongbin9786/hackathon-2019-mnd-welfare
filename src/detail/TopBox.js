@@ -37,6 +37,7 @@ const IconBox = styled.div`
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    text-align: center;
   }
 
   /* 좋아요 용도의 Bounce 애니메이션 활용 */
