@@ -1,0 +1,58 @@
+html,
+body,
+#root {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+*:not(i) {
+  /* rasin black */
+  color: #212121;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.page__inner {
+  height: 100%;
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+.page-exit.page__inner {
+  transition: opacity 400ms ease-out;
+}
+
+.page-enter {
+  opacity: 0;
+  transition: opacity 800ms ease-in-out;
+}
+
+.page-enter-active {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}

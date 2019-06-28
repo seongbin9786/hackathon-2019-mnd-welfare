@@ -1,0 +1,71 @@
+/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 27/06/2019 14:19
+  	*/
+
+@font-face {
+  font-family: 'Flaticon';
+  src: url('./Flaticon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: 'Flaticon';
+    src: url('./Flaticon.svg#Flaticon') format('svg');
+  }
+}
+
+[class^='flaticon-']:before,
+[class*=' flaticon-']:before,
+[class^='flaticon-']:after,
+[class*=' flaticon-']:after {
+  font-family: Flaticon;
+  font-size: 26px;
+  font-style: normal;
+}
+
+.flaticon-favorite-heart-button:before {
+  content: '\f100';
+}
+.flaticon-share-button:before {
+  content: '\f101';
+}
+.flaticon-placeholder:before {
+  content: '\f102';
+}
+.flaticon-coffee:before {
+  content: '\f103';
+}
+.flaticon-football:before {
+  content: '\f104';
+}
+.flaticon-eye:before {
+  content: '\f105';
+}
+.flaticon-casual-t-shirt:before {
+  content: '\f106';
+}
+.flaticon-luggage:before {
+  content: '\f107';
+  margin-left: 12px;
+}
+.flaticon-dumbbell:before {
+  content: '\f108';
+}
+.flaticon-restaurant:before {
+  content: '\f109';
+}
+.flaticon-bed:before {
+  content: '\f10a';
+}
+.flaticon-roller-coaster:before {
+  content: '\f10b';
+}
+.flaticon-books-stack-of-three:before {
+  content: '\f10c';
+}
+.flaticon-pencil-edit-button:before {
+  content: '\f10d';
+}
