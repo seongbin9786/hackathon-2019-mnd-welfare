@@ -82,8 +82,11 @@ const placeholderStyle = css`
 
 const maxLength = str => (str.length > 35 ? `${str.slice(0, 32)}...` : str);
 
+// 띄어쓰기 없는 경우 한 단어
 const topTwoLocation = str =>
-  str.slice(0, str.indexOf(' ', str.indexOf(' ') + 1));
+  !str.includes(' ')
+    ? str
+    : str.slice(0, str.indexOf(' ', str.indexOf(' ') + 1));
 
 export default ({
   onClick,
